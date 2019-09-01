@@ -31,12 +31,12 @@ import os
 import numpy as np
 import cv2
 
-from facemorpher import locator
-from facemorpher import aligner
-from facemorpher import warper
-from facemorpher import blender
-from facemorpher import plotter
-from facemorpher import videoer
+import locator
+import aligner
+import warper
+import blender
+import plotter
+import videoer
 
 def verify_args(args):
   if args['--images'] is None:
@@ -97,7 +97,7 @@ def morph(src_img, src_points, dest_img, dest_points,
   num_frames -= (stall_frames * 2)  # No need to process src and dest image
 
   plt.plot_one(src_img)
-  video.write(src_img, 1)
+  #video.write(src_img, 1)
 
   # Produce morph frames!
   for percent in np.linspace(1, 0, num=num_frames):
@@ -119,7 +119,7 @@ def morph(src_img, src_points, dest_img, dest_points,
     video.write(average_face)
 
   plt.plot_one(dest_img)
-  video.write(dest_img, stall_frames)
+  #video.write(dest_img, stall_frames)
   plt.show()
 
 def morpher(imgpaths, width=500, height=600, num_frames=20, fps=10,

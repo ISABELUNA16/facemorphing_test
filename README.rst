@@ -154,28 +154,22 @@ Examples - `Being John Malkovich`_
 Create a morphing video between the 2 images:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| ``> python facemorpher/morpher.py --src=alyssa.jpg --dest=john_malkovich.jpg``
+| ``> python facemorpher/morpher.py --src=test.jpg --dest=test2.jpg``
 | ``--out_video=out.avi``
 
-(out.avi played and recorded as gif)
-
-.. figure:: https://raw.github.com/alyssaq/face_morpher/master/examples/being_john_malvokich.gif
-   :alt: gif
 
 Save the frames to a folder:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| ``> python facemorpher/morpher.py --src=alyssa.jpg --dest=john_malkovich.jpg``
+| ``> python facemorpher/morpher.py --src=test.jpg --dest=test2.jpg``
 | ``--out_frames=out_folder --num=30``
 
 Plot the frames:
 ^^^^^^^^^^^^^^^^
 
-| ``> python facemorpher/morpher.py --src=alyssa.jpg --dest=john_malkovich.jpg``
+| ``> python facemorpher/morpher.py --src=test.jpg --dest=test2.jpg``
 | ``--num=12 --plot``
 
-.. figure:: https://raw.github.com/alyssaq/face_morpher/master/examples/plot.png
-   :alt: plot
 
 Average all face images in a folder:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -185,8 +179,6 @@ Average all face images in a folder:
 | ``> python facemorpher/averager.py --images=images --blur --background=transparent``
 | ``--width=220 --height=250``
 
-.. figure:: https://raw.github.com/alyssaq/face_morpher/master/examples/average_faces.png
-   :alt: average\_faces
 
 .. _`Use as pip library`:
 
